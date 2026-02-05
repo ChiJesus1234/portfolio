@@ -1,12 +1,27 @@
-// Test message to confirm JavaScript is working
-console.log("JavaScript is connected 🚀");
-
-// Highlight active navigation link
-const links = document.querySelectorAll("nav a");
-const currentPage = window.location.pathname.split("/").pop();
-
-links.forEach(link => {
-  if (link.getAttribute("href") === currentPage) {
-    link.style.textDecoration = "underline";
-  }
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
 });
+
+// Fade-in on scroll
+const fadeElements = document.querySelectorAll(".fade-in");
+
+const showOnScroll = () => {
+  fadeElements.forEach(el => {
+    const elementTop = el.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (elementTop < windowHeight - 100) {
+      el.classList.add("visible");
+    }
+  });
+};
+
+window.addEventListener("scroll", showOnScroll);
+window.addEventListener("load", showOnScroll);

@@ -3,54 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <title>Chinenye Orakwue | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link to CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Chinenye Orakwue</h1>
-    <p>Software Developer in Training @ Educare Technology</p>
-  </header>
+<header>
+  <h1>Chinenye Orakwue</h1>
+  <p>
+    Health Coach & Founder of Fit Nutrition <br>
+    Aspiring Software Developer | Educare Technology
+  </p>
 
-  <section>
-    <h2>About Me</h2>
+  <img src="assets/profile.jpg" alt="Profile photo" class="profile-img">
+
+  <div class="nav-buttons">
+    <a href="#about" class="btn">About</a>
+    <a href="#projects" class="btn">Projects</a>
+    <a href="#contact" class="btn">Contact</a>
+  </div>
+</header>
+
+<section id="about" class="card fade-in">
+ <h2>About Me</h2>
+
+  <p>
+    I am a certified health coach and the founder of <strong>Fit Nutrition</strong>,
+    a wellness brand focused on plant-based nutrition, gut health, and sustainable
+    lifestyle practices.
+  </p>
+
+  <p>
+    Through my work in health coaching, I have supported individuals with nutrition
+    education, fermented foods, smoothies, and practical wellness guidance,
+    especially within the Nigerian context.
+  </p>
+
+  <p>
+    To scale my impact and build smarter health solutions, I am currently training
+    as a <strong>software developer at Educare Technology</strong>, learning
+    programming and web development. My goal is to combine health expertise with
+    technology to create tools, platforms, and digital products that make wellness
+    education more accessible and effective.
+  </p>
+</section>
+
+<section class="card focus-card fade-in">
+  <h2>Current Focus</h2>
+  <ul>
+    <li>Health coaching, nutrition education, and wellness advocacy</li>
+    <li>Learning C programming and web development fundamentals</li>
+    <li>Building small, practical projects that solve real problems</li>
+    <li>Exploring how technology can support health and lifestyle change</li>
+  </ul>
+</section>
+
+<section id="projects" class="card fade-in">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Contact Manager (C Programming)</h3>
     <p>
-      I am a beginner software developer currently studying programming and software development
-      at Educare Technology. I enjoy building practical solutions step by step.
+      A command-line application written in C that allows users to add,
+      view, search, and store contacts using file I/O.
     </p>
-  </section>
+    <a href="https://github.com/ChiJesus1234/Educare-portfolio" target="_blank">
+      View on GitHub
+    </a>
+  </div>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Contact Manager (C)</strong><br>
-        <a href="https://github.com/ChiJesus1234/Educare-portfolio" target="_blank">
-          View on GitHub
-        </a>
-      </li>
-      <li>
-        <strong>Fermentation Landing Page</strong><br>
-        <a href="https://github.com/ChiJesus1234/Fermentation-Landing-Page-Marketing-Style-" target="_blank">
-          Repository
-        </a> |
-        <a href="https://chijesus1234.github.io/Fermentation-Landing-Page-Marketing-Style-/" target="_blank">
-          Live Demo
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: chinenyeorakwue@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/ChiJesus1234" target="_blank">ChiJesus1234</a></p>
-    <p>LinkedIn:
-      <a href="https://www.linkedin.com/in/chinenye-orakwue-69030525" target="_blank">
-        Chinenye Orakwue
-      </a>
+  <div class="project">
+    <h3>Fermentation Landing Page</h3>
+    <p>
+      A marketing-style landing page built with HTML, CSS, and JavaScript.
     </p>
-  </section>
-  <script src="script.js"></script>
+    <a href="https://chijesus1234.github.io/Fermentation-Landing-Page-Marketing-Style-/" target="_blank">
+      View Live Project
+    </a>
+  </div>
+</section>
+
+<section id="contact" class="card fade-in">
+  <h2>Contact</h2>
+  <p>Email: chinenyeorakwue@gmail.com</p>
+  <p>
+    GitHub:
+    <a href="https://github.com/ChiJesus1234" target="_blank">ChiJesus1234</a>
+  </p>
+  <p>
+    LinkedIn:
+    <a href="https://www.linkedin.com/in/chinenye-orakwue-69030525" target="_blank">
+      Chinenye Orakwue
+    </a>
+  </p>
+</section>
+
+<!-- Link to JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,38 +1,117 @@
 body {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #1e293b;   /* soft slate */
+  color: #e5e7eb;
+}
+
+
+
+
+/* Header */
+header {
+  background: #0f172a;  /* deep navy, not black */
+  color: #f8fafc;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+
+
+.profile-img {
+  width: 120px;
+  max-width: 120px;
+  height: 120px;
+  max-height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #38bdf8;
+}
+
+
+/* Navigation buttons */
+.nav-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 26px;
+  background: white;
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #e0e7ff;
+  transform: translateY(-3px);
+}
+
+/* Cards */
+.card {
+  background: #111827;  /* charcoal */
+  max-width: 900px;
+  margin: 70px auto;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  scroll-margin-top: 120px;
+}
+
+.focus-card {
+  background: #020617;
+  border-left: 5px solid #09090a;
+}
+
+h2 {
+  color: #4f46e5;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
   line-height: 1.6;
 }
 
-header {
-  text-align: center;
+/* Projects */
+.project {
   margin-bottom: 30px;
 }
 
-h1 {
-  margin-bottom: 5px;
+.project a {
+  color: #0ea5e9;
+  font-weight: 600;
+  text-decoration: none;
+}
+.project a:hover {
+  text-decoration: underline;
+}
+p, li {
+  color: #e5e7eb;
+}
+h1, h2, h3 {
+  color: #38bdf8;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-section {
-  margin-top: 25px;
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
-.profile-img {
-  width: 140px;        /* control size */
-  height: 140px;
-  border-radius: 50%; /* makes it round */
-  object-fit: cover;  /* prevents stretching */
-  margin-top: 20px;
-  border: 4px solid white;
-}
-header {
-  text-align: center;
-}.profile-img {
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-.profile-img:hover {
-  transform: scale(1.05);
-  transition: 0.3s ease;
-}
+
 
